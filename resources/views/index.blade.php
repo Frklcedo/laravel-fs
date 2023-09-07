@@ -1,8 +1,7 @@
-<h1>
-    The list of tasks
-</h1>
+@extends('layouts.app')
+@section('title', 'The list of tasks')
 
-<div>
+@section('content')
     {{-- @if(count($tasks)) --}}
     {{-- @foreach($tasks as $task) --}}
     @forelse($tasks as $task)
@@ -19,4 +18,4 @@
     </div>
     @endforelse
     {{-- @endif --}}
-</div>
+@endsection
