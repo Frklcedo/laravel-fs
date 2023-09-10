@@ -19,7 +19,7 @@
     @csrf
     <div>
         <label for="title">Title</label>
-        <input type="text" name="title" value="" id="title" />
+        <input type="text" name="title" value="{{ old('title') }}" id="title" />
         @error('title')
         <p class="error-message">
             {{ $message }}
@@ -28,7 +28,7 @@
     </div>
     <div>
         <label for="description">Description</label>
-        <textarea name="description" id="description" rows="5" cols="" tabindex=""></textarea>
+        <textarea name="description" id="description" rows="5" cols="" tabindex="">{{ old('description') }}</textarea>
         @error('description')
         <p class="error-message">
             {{ $message }}
@@ -37,7 +37,7 @@
     </div>
     <div>
         <label for="long_description">Long Description</label>
-        <textarea name="long_description" id="long_description" rows="10" cols="" tabindex=""></textarea>
+        <textarea name="long_description" id="long_description" rows="10" cols="" tabindex="">{{ old('long_description') }}</textarea>
         @error('long_description')
         <p class="error-message">
             {{ $message }}
