@@ -2,6 +2,9 @@
 @section('title', 'The list of tasks')
 
 @section('content')
+<div>
+    <a href="{{ route('tasks.create') }}">Add Task!!</a>
+</div>
 {{-- @if(count($tasks)) --}}
 {{-- @foreach($tasks as $task) --}}
 @forelse($tasks as $task)
