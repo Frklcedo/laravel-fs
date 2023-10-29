@@ -3,6 +3,7 @@
 
 ## Comandos importantes
 
+* `composer create-project --prefer-dist laravel/laravel *project*`
 * `php artisan tinker`
 * `php artisan serve`
 * `php artisan route:list`
@@ -17,3 +18,4 @@
 `php artisan migrate:refresh --seed` aplica as migration para o db e refazendo as seeds
 * `php artisan migrate:rollback` remove a ultima migration
 * `php artisan db:seed`
+* `php artisan make:controller *Model*Controller --api` focado para api
