@@ -20,3 +20,5 @@
 * `php artisan migrate:rollback` remove a ultima migration
 * `php artisan db:seed`
 * `php artisan make:controller *Model*Controller --api` focado para api*
+
+* `php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"` "publicando" Sanctum para uso específico de projeto ( algo como child theme ) * 
