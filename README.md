@@ -21,4 +21,6 @@
 * `php artisan db:seed`
 * `php artisan make:controller *Model*Controller --api` focado para api*
 
-* `php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"` "publicando" Sanctum para uso específico de projeto ( algo como child theme ) * 
+* `php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"` "publicando" Sanctum para uso específico de projeto ( algo como child theme ) 
+* `php artisan make:policy *Policy*Policy`  
+`php artisan make:policy *Policy*Policy --model=*Model*` para associar a uma resource model
