@@ -26,3 +26,5 @@
 `php artisan make:policy *Policy*Policy --model=*Model*` para associar a uma resource model
 
 * `php artisan make:command *CommandName*` criando comandos customizados
+* `php artisan schedule:work` run laravel cron locally
+* `php artisan schedule:run` run laravel cron in production
