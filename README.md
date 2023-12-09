@@ -24,3 +24,5 @@
 * `php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"` "publicando" Sanctum para uso específico de projeto ( algo como child theme ) 
 * `php artisan make:policy *Policy*Policy`  
 `php artisan make:policy *Policy*Policy --model=*Model*` para associar a uma resource model
+
+* `php artisan make:command *CommandName*` criando comandos customizados
