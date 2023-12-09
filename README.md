@@ -30,3 +30,6 @@
 * `php artisan schedule:run` run laravel cron in production
 
 * `php artisan make:notification *NotificationName*` Create notification class
+
+* `php artisan queue:table` Create queue table in database to use for migration
+* `php artisan queue:work` Should run parallel to your server 
