@@ -34,3 +34,5 @@
 
 * `php artisan queue:table` Create queue table in database to use for migration
 * `php artisan queue:work` Should run parallel to your server 
+
+* `php artisan make:livewire *LivewireComponentName*` Create Livewire component  
