@@ -4,6 +4,7 @@
 ## Comandos importantes
 
 * `composer create-project --prefer-dist laravel/laravel *project*`
+* `composer require livewire/livewire`
 * `php artisan tinker`
 * `php artisan serve`
 * `php artisan route:list`
