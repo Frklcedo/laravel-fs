@@ -2,7 +2,9 @@
 
 namespace App\Livewire;
 
+use App\Models\Option;
 use Livewire\Component;
+use Livewire\Attributes\On;
 
 class Polls extends Component
 {
@@ -15,4 +17,17 @@ class Polls extends Component
             'polls' => $polls
         ]);
     }
+
+    #[On('pollCreated')]
+    public function updatePollsList()
+    {
+        $this->dispatch('refresh');
+    }
+
+    public function vote(Option $option)
+    {
+        // $option = \App\Models\Option::findOrFail($optionId);
+        $option->votes()->create();
+    }
+
 }
