@@ -10,9 +10,7 @@
 </head>
 
 <body>
-    <div class="text-4xl">
-        Big text
-    </div>
+    {{ $slot }}
 </body>
 
 </html>
