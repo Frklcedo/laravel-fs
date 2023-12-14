@@ -1,0 +1,3 @@
+<a class="rounded-md border border-slate-300 px-2.5 py-1.5 text-center text-sm font-semibold text-black shadow-sm hover:bg-slate-100 transition-colors" href="{{ $href }}">
+    {{ $slot }}
+</a>
