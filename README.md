@@ -21,6 +21,7 @@
 `php artisan migrate:refresh --seed` aplica as migration para o db e refazendo as seeds
 * `php artisan migrate:rollback` remove a ultima migration
 * `php artisan db:seed`
+* `php artisan db:wipe` limpa todo o banco de dados
 * `php artisan make:controller *Model*Controller --api` focado para api*
 
 * `php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"` "publicando" Sanctum para uso específico de projeto ( algo como child theme ) 
