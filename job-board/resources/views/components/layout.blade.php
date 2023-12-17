@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Laravel job board</title>
-    @vite('resources/css/app.css')
+
+
+    {{-- @vite('resources/css/app.css') --}}
+    {{-- @vite('resources/js/app.js') --}}
+
+    @vite([ 'resources/css/app.css', 'resources/js/app.js' ])
 </head>
 
-<body class="text-slate-700 bg-slate-200">
+<body class="text-slate-700 bg-gradient-to-r from-indigo-100 from-10% via-sky-100 via-30% to-emerald-100 to-90%">
     <div class="mx-auto pt-10 max-w-2xl ">
         {{ $slot }}
     </div>
