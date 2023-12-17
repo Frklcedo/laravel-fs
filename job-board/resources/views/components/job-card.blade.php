@@ -1,4 +1,4 @@
-<x-card {{ $attributes->merge([]) }}>
+<x-card {{ $attributes }}>
     <div class="justify-between flex mb-4">
         <h2 class="text-lg font-medium">{{ $job->title }}</h2>
         <div class="text-slate-500">
@@ -23,8 +23,5 @@
             </x-tag>
         </div>
     </div>
-    <p class="text-sm text-slate-500 mb-4">
-        {!! nl2br( e( $job->description ) ) !!}
-    </p>
     {{ $slot }}
 </x-card>
