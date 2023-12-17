@@ -8,7 +8,7 @@
     <div class="justify-between items-center flex mb-4 text-sm text-slate-500">
         <div class="flex space-x-4">
             <div>
-                Company name
+                {{ $job->employer->company_name }}
             </div>
             <div>
                 {{ $job->location }}
