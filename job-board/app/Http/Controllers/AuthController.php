@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-
     public function create()
     {
         return view('auth.create');
@@ -20,18 +19,15 @@ class AuthController extends Controller
     {
         $request->validate([
             'email' => 'required|email',
-            'password' => 'required'
+            'password' => 'required',
         ]);
 
         $credentials = $request->only(['email', 'password']);
         $remember = $request->filled('remember');
 
-        if(Auth::attempt($credentials, $remember))
-        {
+        if (Auth::attempt($credentials, $remember)) {
             return redirect()->intended('/');
-        }
-        else
-        {
+        } else {
             return redirect()->back()->with('error', 'Invalid credentials');
         }
     }

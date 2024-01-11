@@ -26,7 +26,7 @@
             <ul class="flex space-x-2">
                 @auth
                 <li>
-                    {{ auth()->user->name ?? 'Anon' }}
+                    {{ auth()->user()->name ?? 'Anon' }}
                 </li>
                 <li>
                     <form method="POST" action="{{ route('auth.destroy') }}">
