@@ -38,3 +38,5 @@
 * `php artisan queue:work` Should run parallel to your server 
 
 * `php artisan make:livewire *LivewireComponentName*` Create Livewire component  
+* `php artisan make:middleware *MiddlewareName*` Create Custom middleware
+
