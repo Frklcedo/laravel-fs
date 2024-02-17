@@ -17,7 +17,9 @@ return new class extends Migration
             $table->unsignedInteger('expected_salary');
 
             $table->foreignIdFor(\App\Models\User::class)->constrained();
-            $table->foreignIdFor(\App\Models\Job::class)->constrained();
+            $table->foreignIdFor(\App\Models\Job::class)
+                  ->constrained();
+                  // ->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
