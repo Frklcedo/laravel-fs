@@ -6,13 +6,16 @@
         </div>
     </div>
     <div class="justify-between items-center flex mb-4 text-sm text-slate-500">
-        <div class="flex space-x-4">
+        <div class="flex space-x-4 items-center">
             <div>
                 {{ $job->employer->company_name }}
             </div>
             <div>
                 {{ $job->location }}
             </div>
+            @if($job->deleted_at)
+                <span class="text-xs text-red-500">Deleted</span>
+            @endif
         </div>
         <div class="flex space-x-1 text-xs items-center">
             <x-tag>
